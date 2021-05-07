@@ -71,6 +71,10 @@ body{
     letter-spacing: 1px;
 }
 
+.light-bg {
+    background-color: rgba(255, 255, 255, 0.2)!important;
+}
+
 .add_row{
     padding: 14px;
     border-bottom: 1px solid #e7e7e7;
@@ -85,10 +89,10 @@ body{
 }
 
 .add_type{
-    width: 55px;
+    width: 80px;
     border: 1px solid #e7e7e7;
     height: 44px;
-    font-size: 18px;
+    font-size: 14px;
     color: inherit;
     background-color: #fff;
     margin-right: 10px;
