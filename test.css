@@ -1,0 +1,12 @@
+.error{
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+.msg{
+    width: 20rem;
+    text-align: center;
+}
+

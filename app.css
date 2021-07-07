@@ -35,7 +35,7 @@ body{
 }
 
 .budget_title{
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 10px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -43,7 +43,7 @@ body{
 
 .budget_value{
     font-weight: 300;
-    font-size: 46px;
+    font-size: 2.875rem;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
@@ -133,4 +133,76 @@ body{
 .add_btn {
     border: 0px solid transparent;
     background-color: transparent;
+}
+
+.item_delete-btn{
+    border: 0px solid transparent;
+}
+
+.item{
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.item:first-child{
+    border-top: 1px solid #e7e7e7;
+}
+
+.fa-trash-alt .item-delete{
+    color: #28B9B5 !important;
+}
+
+.item > .right{
+    display:flex;
+
+}
+
+.income, .item_value, .income, .item_delete-btn{
+    color: #28B9B5;
+}
+
+.item_value {
+    /* float: left; */
+    transition: transform 0.3s;
+}
+
+.item_delete-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+
+.item:hover .item_delete-btn{
+    display: block;
+    /* transition: all 3s ease-in 1.5s; */
+}
+
+
+.item:hover .item_value { transform: translateX(-20px); }
+.item:hover .item_percentage { transform: translateX(-20px); }
+
+
+.item_percentage{
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 11px;
+    background-color: #FFDAD9;
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    text-align: center;
+}
+
+.expenses .item_value, .expenses .item_percentage, .expenses .item_delete-btn {
+    color: #FF5049;
+}
+
+.item:hover .item_percentage{
+    transform: translateX(-20px);
 }
