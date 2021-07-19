@@ -60,8 +60,8 @@ body{
 }
 
 
-.budget_income--text,
-.budget_expenses--text{
+.budget_income-text,
+.budget_expenses-text{
     font-size: 13px;
     color: #444;
 }
@@ -73,6 +73,10 @@ body{
 
 .light-bg {
     background-color: rgba(255, 255, 255, 0.2)!important;
+}
+
+.bg-income{
+    background-color: #0fe4bd!important;
 }
 
 .add_row{
@@ -117,10 +121,22 @@ body{
     transition: border 0.3s;
 }
 
-.add_description:focus, .add_value:focus{
+.add_description:focus, .add_value:focus, .add_type:focus{
     outline: transparent;
-    border-color: thistle;
+    border-color: #0fe4bd;
 }
+.red{
+    color: #ff5049!important;
+}
+
+.red-focus:focus{
+    border: 1px solid #ff5049 !important;    
+}
+
+.text-success:active, .text-success:focus{
+    color: #0fe4bd !important;    
+}
+
 
 .add_description{
     width: 400px;
@@ -133,6 +149,7 @@ body{
 .add_btn {
     border: 0px solid transparent;
     background-color: transparent;
+    outline: none;
 }
 
 .item_delete-btn{
