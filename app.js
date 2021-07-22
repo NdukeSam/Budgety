@@ -435,3 +435,33 @@ var controller = (function (budgetCtrl, UICtrl) {
 // controller.validate();   
 controller.init();
 
+{
+    let firstName = 'John';
+    let lastName = 'Smith';
+    const yearOfBirth = 1990;
+
+
+    function  calcAge(year) {
+        return 2016 - year;
+    }
+
+    console.log(`${firstName} ${lastName}`);
+
+    // console.log(`${firstName} `.repeat(4));
+
+    console.log(`${firstName} ${lastName} is a man who lives in Uyo and is ${calcAge(yearOfBirth)} years old. Check out his IG @${firstName}${lastName}`);
+    
+    
+    const years = [1990, 1965, 1982, 1937];
+
+    //ES5
+    var ages5 = years.map(function (el) {
+        return 2021 - el;        
+    });
+    console.log(ages5);
+
+    let ages6 = years.map(el => 2021 - el);
+
+    console.log(ages6);
+
+}
