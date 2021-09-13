@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgety</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="app.css">
+    <!-- Icons-->
+    <link rel="stylesheet" href="../Budgety/img/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="icons.css" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="linear-bg budget-top">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center px-4 pt-5">
+                        <div class="flex-column col-lg-3">
+                        <h6 class="budget_title">Available Budget in <span class="budget_title-month">Month</span></h6>  
+                            <h1 class="budget_value text-center">+ 2,345.64</h1>
+
+                            <div class="budget_income bg-income d-flex justify-content-between">
+                                <span class="budget_income-text">
+                                    Income
+                                </span>
+                                <div class="right">
+                                   <span class="budget_income-value">+4,300.00</span>
+                                   <span class="badge budget_income--percentage">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+                                </div>
+                                
+                            </div>
+
+                            <div class="budget_expenses bg-danger d-flex justify-content-between">
+                                <span class="budget_expenses-text">
+                                    Expenses
+                                </span>
+                                
+                                <div class="right">
+                                 <span class="budget_expenses-value">- 1,954.36</span> 
+                                 <span class="badge light-bg budget_expenses-percentage">45%</span>  
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+        <section class="budget-bottom">
+            <div class="add_row">
+                <div class="add_container">
+                    <select name="add_type" id="#" class="add_type">
+                        <option value="inc">Income</option>
+                        <option value="exp">Expense</option>
+                    </select>
+                    <input type="text" id="textOnly-field" class="add_description" placeholder="Please add description" required>
+                    <!-- onkeyup="controller.validate();" -->
+                    <input type="number" class="add_value" placeholder="Value">
+                  
+                     <button class="add_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-check2-circle text-success add_btn_svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                          </svg>
+                     </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-6">
+                        <div class="Income">
+                            <h5 class="income_title text-info">INCOME</h5>
+                            <div class="income_list">
+                                <!-- <div class="item d-flex justify-content-between" id="income-0">
+                                    <div class="item_description">Salary</div>
+                                    <div class="right">
+                                        <div class="item_value">+ 2,100.00</div>
+                                        <span class="item_delete">
+                                            <button class="item_delete-btn"><i class="fas fa-backspace"></i></button>
+                                        </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="expenses">
+                            <h5 class="expenses_title text-danger">EXPENSES</h5>
+                            <div class="expenses_list">
+                                <!-- pdidi <div class="item d-flex justify-content-between" id="expense-0">
+                                    <div class="item_description">Apartment Rent</div>
+                                    <div class="right">
+                                        <div class="item_value">- 900.00</div>
+                                        <span class="item_percentage">21%</span>
+                                        <span class="item_delete">
+                                            <button class="item_delete-btn"><i class="fas fa-backspace"></i></button>
+                                        </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
